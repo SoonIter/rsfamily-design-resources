@@ -7,8 +7,12 @@
     "rsbuild",
     "rsdoctor",
     "rsfamily",
+    "rslib",
+    "rslint",
     "rspack",
-    "rspress"
+    "rspress",
+    "rstack",
+    "rstest"
   ],
   "ignoreWords": [],
   "import": []
