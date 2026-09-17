@@ -18,8 +18,6 @@ are preserved.
 The existing [`vscode`](./vscode) assets are separate and were not changed by
 this Figma refresh.
 
-![Preview of all 27 icons](../assets/rstack-logo-variants-preview.svg)
-
 After deployment, each file is available from `https://assets.rspack.rs/` using
 its repository path. For example:
 
