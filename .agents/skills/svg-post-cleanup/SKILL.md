@@ -1,11 +1,11 @@
 ---
 name: svg-post-cleanup
-description: Clean and conservatively compress standalone SVG assets after export. Always use before committing or opening/updating a PR that adds or modifies SVG files, and when asked to optimize exported SVGs.
+description: Clean and conservatively compress standalone SVG assets after export. When a commit or PR adds or modifies SVGs, ask the user whether to run this cleanup first. Invoke only after user confirmation or an explicit cleanup request; do not trigger automatically.
 ---
 
 # SVG post-export cleanup
 
-Apply to added or modified SVGs before submission; leave unrelated assets alone.
+Run only when the user has confirmed or explicitly requested cleanup. Apply to added or modified SVGs; leave unrelated assets alone.
 
 1. Keep originals for comparison. Check paths for invalid coordinates such as `NaN` or `Infinity`; XML parsing alone will not catch them. Repair only from a reliable reference, then visually verify the repair.
 2. Preserve root `xmlns` and `viewBox`. For scalable icons, omit fixed root `width`/`height` unless consumers require them. Keep nested viewport sizing, `preserveAspectRatio`, overflow, backgrounds, fills, strokes, opacity, gradients, masks, clips, and transforms.
